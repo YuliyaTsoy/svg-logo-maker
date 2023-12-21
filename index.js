@@ -15,17 +15,12 @@ inquirer
 .prompt(questions)
 
 .then ((response)=>{
-    // checks if logo text is no more than 3 characters
-    if (response.text.length <= 3) {
+  
         generateLogo(response);
-    } else
-   
-    console.log("Try again! Text must be up to 3 characters!");
+    
 });
 
 }
-// catches errors if any
-// .catch((err) => console.log(err));
 
 
 init();
