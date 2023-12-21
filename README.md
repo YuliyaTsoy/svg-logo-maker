@@ -11,7 +11,7 @@ node index.js
 The application includes Triangle, Circle, and Square classes, as well as tests for each of these classes using Jest.
 
 ## Demo Link
-https://drive.google.com/file/d/1Q0CQ_TV_IRHOx73Ras3eugs8fVAlfT7N/view Links to an external site.
+[Click to watch Demonstration of working application](https://drive.google.com/file/d/1Q0CQ_TV_IRHOx73Ras3eugs8fVAlfT7N/view)
 
 ## Acceptance Criteria
 
