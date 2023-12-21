@@ -2,9 +2,9 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const questions = require('./lib/questions.js');
 
-// generateLogo function creates svg logo using inquirer prompts and writes data to file 
+// generateLogo function creates svg logo using inquirer prompts and writes data to file logo.svg
 function generateLogo(response){
-    const svg = setShape(response);
+    const svg = makeShape(response);
     fs.writeFile("logo.svg", svg, () => console.log("Successfully generated logo!"))
 }
 
