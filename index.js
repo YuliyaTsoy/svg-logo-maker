@@ -9,17 +9,18 @@ function generateLogo(response){
     fs.writeFile("./examples/logo.svg", svg, () => console.log("Successfully generated logo!"))
 }
 
-// initializes generateLogo function using responses
+// starts prompts and generates logo based on user choices
 function init () {
 inquirer
 .prompt(questions)
 
 .then ((response)=>{
     // checks if logo text is no more than 3 characters
-    if (response.text.length > 3) {
-        console.log("Try again! Text must be up to 3 characters!");
-    }
-    generateLogo(response);
+    if (response.text.length <= 3) {
+        generateLogo(response);
+    } else
+   
+    console.log("Try again! Text must be up to 3 characters!");
 });
 
 }
